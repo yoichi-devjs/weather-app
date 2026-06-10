@@ -1,0 +1,60 @@
+.weather-card {
+  background: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.temp {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.details {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.loading {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.placeholder {
+  margin-top: 20px;
+  color: #777;
+  font-style: italic;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ddd;
+  border-top-color: #0077ff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
